@@ -1,0 +1,13 @@
+extends template
+
+block vars
+    - var title = "Profile Page"
+
+block body
+    p #{userdetails.firstname}'s Profile Page
+    ul 
+      li Firstname: #{userdetails.firstname}
+      li Lastname: #{userdetails.lastname}
+      li Username: #{userdetails.username}
+    br
+    a(href="/") Logout
